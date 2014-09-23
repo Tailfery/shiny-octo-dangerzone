@@ -11,9 +11,9 @@ import ca.ubc.cpsc310.gitlab.client.user.User;
 import ca.ubc.cpsc310.gitlab.client.service.LoadUsersService;
 import ca.ubc.cpsc310.gitlab.client.service.LoadUsersServiceAsync;
 //>>>>>>> async
-//import ca.ubc.cpsc310.gitlab.shared.FieldVerifier;
-//import com.google.gwt.core.client.EntryPoint;
-//import com.google.gwt.core.client.GWT;
+import ca.ubc.cpsc310.gitlab.shared.FieldVerifier;
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
@@ -66,7 +66,7 @@ public class GitLab implements EntryPoint {
 
 			@Override
 			public void onSuccess(List<IUser> result) {
-				Window.alert("Got list back with " +  result.size() + " entries");
+				//Window.alert("Got list back with " +  result.size() + " entries");
 				displayUsers(result);
 			}});
 	
